@@ -1,0 +1,14 @@
+<form action="/articles/<%=params[:id]%>" method="post">
+  <%= token_tag nil %>
+  Title: <input type="text" name="article[title]" required>
+  Body: <input type="text" name="article[body]" required>
+  <input type="hidden" name="_method" value="put">
+  <button type="submit">Submit</button>
+</form>
+
+<form action="/articles/<%=params[:id]%>" method="post">
+  <%= token_tag nil %>
+  <input type="hidden" name="_method" value="DELETE">
+  <button type="submit">Delete</button>
+</form>
+

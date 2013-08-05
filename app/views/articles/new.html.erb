@@ -1,0 +1,6 @@
+<form action="/articles" method="post">
+  <%= token_tag nil %>
+  Title: <input type="text" name="article[title]" required>
+  Body: <input type="text" name="article[body]" required>
+  <button type="submit">Submit</button>
+</form>
